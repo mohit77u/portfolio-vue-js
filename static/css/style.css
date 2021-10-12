@@ -1,0 +1,605 @@
+@font-face {
+  font-family: 'Mulish';
+  src: url("../font/Mulish.ttf");
+}
+
+@font-face {
+  font-family: 'Oxygen';
+  src: url("../font/Oxygen.ttf");
+}
+
+body {
+  background: #01001d;
+  font-family: 'Mulish';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Mulish';
+  font-weight: bold;
+  margin: 10px 0;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 90%;
+}
+
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  margin: 15px 0;
+}
+
+section {
+  padding: 20px 0;
+}
+
+p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.line .inner-line {
+  background: #0bceaf;
+  width: 50px;
+  height: 3px;
+  border-radius: 15px;
+}
+
+.inner-line {
+  background: #0bceaf;
+  width: 50px;
+  height: 3px;
+  border-radius: 15px;
+}
+
+.what-content {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border: 2px outset rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  height: 100%;
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.social a {
+  color: white;
+}
+
+.social a i {
+  color: white;
+  font-size: 25px;
+  margin: 8px;
+}
+
+.different {
+  color: #0bceaf;
+}
+
+@media only screen and (max-width: 576px) {
+  img {
+    width: 350px;
+  }
+  iframe {
+    width: 250px;
+    height: 300px;
+  }
+  .about .col-sm-6, .home .col-sm-6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  img {
+    width: 350px;
+  }
+  iframe {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  img {
+    width: 400px;
+  }
+  iframe {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.main {
+  padding-top: 75px;
+}
+
+.header {
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #01001d;
+}
+
+.header .navbar-toggler {
+  position: relative;
+  height: 25px;
+}
+
+.header .top-toggle {
+  width: 32px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  top: 3px;
+  right: 0;
+}
+
+.header .middle-toggle {
+  width: 22px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.header .bottom-toggle {
+  width: 25px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.header .navbar-brand {
+  color: #0bceaf;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  font-size: 25px;
+}
+
+.header .navbar-brand:hover {
+  color: white;
+}
+
+.header .navbar {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header .navbar .fas {
+  color: white;
+}
+
+.header .navbar .navbar-nav {
+  margin-left: auto;
+}
+
+.header .navbar .navbar-nav .nav-item {
+  padding: 0 10px;
+  position: relative;
+}
+
+.header .navbar .navbar-nav .nav-item .nav-link {
+  color: white;
+}
+
+.header .navbar .navbar-nav .nav-item .nav-link:hover span {
+  width: 40px;
+}
+
+.header .navbar .navbar-nav .nav-item .nav-link span {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  -webkit-transition: 0.7s linear;
+  transition: 0.7s linear;
+  background: white;
+  border-radius: 10px;
+}
+
+.footer .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .row p {
+  color: white;
+}
+
+.footer .row .social {
+  margin: 0;
+}
+
+.home {
+  padding: 100px 0;
+}
+
+.home .col-sm-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .col-sm-6 .home-title {
+  color: white;
+}
+
+.home .col-sm-6 .home-title .social-details ul {
+  padding: 0;
+  margin: 20px 0;
+}
+
+.home .col-sm-6 .home-title .social-details ul li {
+  list-style-type: none;
+  padding: 8px 0;
+}
+
+.home .col-sm-6 .home-title .social-details ul li .fas {
+  margin-right: 10px;
+  color: #0bceaf;
+}
+
+.home .col-sm-6 .home-title .hey {
+  padding: 8px 35px;
+  background: #0bceaf;
+  border: none;
+  border-radius: 25px 0 15px 0;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.home .col-sm-6 .home-title h1 {
+  font-size: 48px;
+}
+
+.home .col-sm-6 .home-title h6 {
+  font-size: 25px;
+}
+
+.home .col-sm-6 .home-title .hirebtn {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 30px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.about .inner-line {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.about .col-sm-6 .about-content h2, .about .col-sm-6 .about-content p {
+  color: white;
+}
+
+.about .col-sm-6 .about-content .good {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.about .col-sm-6 .about-content .good .good-btn {
+  background: transparent;
+  padding: 5px 20px;
+  border: 1px solid #0bceaf;
+  color: white;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.about .col-sm-6 .about-content .downloadcvbtn {
+  background: #0bceaf;
+  padding: 8px 30px;
+  border-radius: 20px 0 20px 0;
+  color: white;
+  border: none;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.about .col-sm-6 .about-content .downloadcvbtn .fas {
+  margin: 0 10px;
+}
+
+.what {
+  position: relative;
+  overflow: hidden;
+}
+
+.what h2 {
+  color: white;
+}
+
+.what .inner-line {
+  margin: 10px 0;
+}
+
+.what .row {
+  padding: 50px 0;
+}
+
+.what .ball-group .ball {
+  border-radius: 50%;
+  position: absolute;
+  z-index: -5;
+}
+
+.what .ball-group .ball1 {
+  bottom: 0;
+  right: -3%;
+  height: 300px;
+  width: 300px;
+  background: -webkit-gradient(linear, left top, right top, from(#0084ff), to(#0ff));
+  background: linear-gradient(90deg, #0084ff, #0ff);
+}
+
+.what .ball-group .ball2 {
+  top: 12%;
+  left: -4%;
+  height: 300px;
+  width: 300px;
+  background: -webkit-gradient(linear, left top, right top, from(#00ffd9), to(#00ff84));
+  background: linear-gradient(90deg, #00ffd9, #00ff84);
+}
+
+.what .what-content .fas {
+  font-size: 50px;
+  padding: 20px 0;
+}
+
+.what .what-content .card-body h5, .what .what-content .card-body p {
+  color: white;
+}
+
+.skills h2 {
+  color: white;
+  text-align: center;
+}
+
+.skills .line {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.skills .col-sm-6 .value, .skills .col-sm-6 .prof-skill-name {
+  color: white;
+}
+
+.skills .col-sm-6 .single-professional-skils {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+.skills .col-sm-6 .single-professional-skils .prof-skill-name .ep-legend--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .col-sm-6 .single-professional-skils .prof-skill-name .ep-legend--container p {
+  margin: 0;
+}
+
+.skills .col-sm-6 .single-professional-skils .prof-skill-name .skill-name {
+  color: white;
+  margin: 10px 0;
+  text-align: center;
+  width: 120px;
+}
+
+.skills .col-sm-6 .skills-data h2 {
+  color: white;
+  text-align: center;
+}
+
+.skills .col-sm-6 .skills-data .progress {
+  height: 7px;
+  border-radius: 10px;
+}
+
+.skills .col-sm-6 .skills-data .progress .progress-bar {
+  background: #0bceaf;
+}
+
+.skills .col-sm-6 .skills-data .skills-progress {
+  padding: 10px 25px;
+}
+
+.skills .col-sm-6 .skills-data .skills-progress .top-progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills .col-sm-6 .skills-data .skills-progress .top-progress p {
+  color: white;
+}
+
+.edu-exp .col-sm-6 h2 {
+  color: white;
+}
+
+.edu-exp .col-sm-6 .row {
+  padding: 30px 0;
+}
+
+.edu-exp .col-sm-6 .row .what-content .card-body h5, .edu-exp .col-sm-6 .row .what-content .card-body p {
+  color: white;
+}
+
+.edu-exp .col-sm-6 .row .what-content .card-body .responsibilty {
+  padding: 10px 20px;
+}
+
+.portfolio h2 {
+  color: white;
+}
+
+.portfolio .row {
+  padding: 50px 0;
+}
+
+.portfolio .row .portfolio-content {
+  padding: 0;
+  margin: 15px 0;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+}
+
+.portfolio .row .portfolio-content img {
+  width: 100%;
+  height: 250px;
+}
+
+.portfolio .row .portfolio-content .card-body {
+  padding: 7px 0;
+}
+
+.portfolio .row .portfolio-content h6 {
+  color: white;
+}
+
+.portfolio .row .portfolio-content h4 {
+  color: #0bceaf;
+}
+
+.contact h2, .contact h5, .contact p {
+  color: white;
+}
+
+.contact .fas {
+  font-size: 50px;
+  padding: 10px 0;
+}
+
+.contact .row {
+  padding: 40px 0;
+}
+
+.contact .row .card-body {
+  text-align: center;
+}
+
+.contact-form .map {
+  padding: 30px;
+}
+
+.contact-form .form-error {
+  color: white;
+}
+
+.contact-form .form {
+  padding: 30px;
+}
+
+.contact-form .form input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 12px;
+}
+
+.contact-form .form input, .contact-form .form textarea {
+  background: transparent;
+  border: 1px solid #0bceaf;
+  border-radius: 5px;
+  color: white;
+}
+
+.contact-form .form input:focus, .contact-form .form textarea:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #0bceaf;
+}
+
+.contact-form .form .submitbtn {
+  background: #0bceaf;
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 20px 0 20px 0;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.contact-form .form .form-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-form .form .form-inner .first {
+  margin-right: 10px;
+}
+
+.contact-form .form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  height: 175px;
+}
+/*# sourceMappingURL=style.css.map */
